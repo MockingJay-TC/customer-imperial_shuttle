@@ -1,27 +1,68 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Nav = ({ childComp }) => {
+  const location = useLocation();
+
+  const [background, setBackground] = useState("transparent");
+  const [position, setPosition] = useState("fixed");
+  const [color, setColor] = useState("white");
+  const [navbar, setNavbar] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setBackground("transparent");
+      setPosition("fixed");
+      setColor("white");
+    } else {
+      setBackground("white");
+      setPosition("relative");
+      setColor("black");
+    }
+  }, [location.pathname]);
+
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 48) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow-sm">
+      <nav
+        className={
+          navbar
+            ? ` active border-gray-200 px-2 sm:px-4 py-2.5 shadow-sm w-full z-50`
+            : "border-gray-200 px-2 sm:px-4 py-2.5 shadow-sm w-full z-50"
+        }
+        style={{
+          position: `${position}`,
+          backgroundColor: `${background}`,
+        }}
+      >
         <div className="container flex flex-wrap justify-between items-center mx-auto h-12 ">
           <Link to="/" className="flex items-center">
-            <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span
+              className={`text-${navbar ? 'black' : color} self-center text-xl md:text-2xl font-semibold whitespace-nowrap`}
+            >
               Imperial Shuttle
             </span>
           </Link>
           <div className="flex items-center md:order-2">
             <button
               type="button"
-              className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+              className="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 "
               id="user-menu-button"
               aria-expanded="false"
               data-dropdown-toggle="dropdown"
             >
               <span className="sr-only">Open user menu</span>
               <img
-                className="w-8 h-8 rounded-full object-cover"
+                className="w-8 h-8  rounded-full object-cover shadow-md"
                 src="assets/images/Victor.jpg"
                 alt="Logo"
               />
@@ -102,14 +143,14 @@ const Nav = ({ childComp }) => {
             </button>
           </div>
           <div
-            className="hidden bg-[white] z-50 justify-between items-center w-full md:flex md:w-auto md:order-1"
+            className="hidden bg-white md:bg-transparent rounded-md z-50 justify-between items-center w-full md:flex md:w-auto md:order-1"
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-normal">
               <li>
                 <Link
                   to="/"
-                  className=" block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                  className={`block py-2 pr-4 pl-3 bg-blue-700 rounded md:bg-transparent text-${color} md:text-${color} md:p-0`}
                   aria-current="page"
                 >
                   Home
@@ -118,7 +159,7 @@ const Nav = ({ childComp }) => {
               <li>
                 <Link
                   to="/about"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`block py-2 pr-4 pl-3 text-gray-700 md:text-${color} border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#ec3323] md:hover:scale-125 md:p-0  md:hover:-translate-y-1 transition ease-in-out delay-150 duration-300`}
                 >
                   About
                 </Link>
@@ -126,7 +167,7 @@ const Nav = ({ childComp }) => {
               <li>
                 <Link
                   to="/contact"
-                  className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  className={`block py-2 pr-4 pl-3 text-gray-700 md:text-${color} border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-[#ec3323] md:hover:scale-125 md:p-0  md:hover:-translate-y-1 transition ease-in-out delay-150 duration-300`}
                 >
                   Contact
                 </Link>
