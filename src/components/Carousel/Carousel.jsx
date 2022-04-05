@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
 import content from "./carouselData";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   return (
@@ -19,7 +20,9 @@ const Carousel = () => {
             <p>{item.description}</p>
             {/* <button className="btn text-white text-2xl font-bold">{item.button}</button> */}
             <div>
-              <button className="btn text-md md:text-2xl">{item.button}</button>
+              <Link to="/car-listing">
+                <button className="btn text-md md:text-2xl">Rent Now</button>
+              </Link>
             </div>
           </div>
           {/* <section>
