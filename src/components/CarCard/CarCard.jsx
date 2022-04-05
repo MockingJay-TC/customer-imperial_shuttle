@@ -1,17 +1,19 @@
 import React from "react";
+import { BsHeartFill } from "react-icons/bs";
+import { GiGearStickPattern } from "react-icons/gi";
 
 const CarCard = () => {
   return (
     //   Car Card
-    <div className="rounded-xl shadow-sm p-8">
+    <div className="rounded-xl shadow-md p-8 bg-white h-fit">
       {/* name */}
       <div className="flex justify-between">
         <h2 className="font-bold">Porsche 718 Cayman S</h2>
-        <div>love</div>
+        <BsHeartFill className="text-[#ec3323]" />
       </div>
       <p className="text-[#88939e]">Coupe</p>
       {/* image */}
-      <img src="assets/images/1.png" className="my-4" alt="Car" />
+      <img src="assets/images/1.png" className="my-4 px-6" alt="Car" />
       {/* settings */}
       <div className="flex justify-between">
         {/* Passengers */}
@@ -21,7 +23,7 @@ const CarCard = () => {
         </div>
         {/* Transmission */}
         <div className="flex items-center gap-2">
-          <div></div>
+          <GiGearStickPattern className="text-[#ec3323]" />
           <p>Manual</p>
         </div>
         {/* Rate */}
