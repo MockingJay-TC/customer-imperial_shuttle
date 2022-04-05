@@ -5,7 +5,7 @@ import content from "./carouselData";
 
 const Carousel = () => {
   return (
-    <Slider className="slider-wrapper">
+    <Slider className="slider-wrapper relative">
       {content.map((item, index) => (
         <div
           key={index}
@@ -19,7 +19,7 @@ const Carousel = () => {
             <p>{item.description}</p>
             {/* <button className="btn text-white text-2xl font-bold">{item.button}</button> */}
             <div>
-              <button class="btn">{item.button}</button>
+              <button className="btn text-md md:text-2xl">{item.button}</button>
             </div>
           </div>
           {/* <section>

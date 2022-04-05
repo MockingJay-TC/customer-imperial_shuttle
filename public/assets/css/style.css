@@ -156,14 +156,10 @@ polygon {
 /* button */
 
 .btn {
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-}
-
-.btn {
   position: relative;
   border: none;
-  font-size: 22px;
+  /* font-size: 22px; */
   transition: color 0.5s, transform 0.2s, background-color 0.2s;
   outline: none;
   border-radius: 3px;
@@ -264,8 +260,6 @@ polygon {
 
 /* navbar */
 .active {
-  /* background-color: linear-gradient(90deg, rgb(66, 1, 194) 0% rgb(0, 78, 194) 100%) !important; */
-  /* background: linear-gradient(90deg, #e66465, #9198e5) !important; */
   background: white !important;
 }
 .active a,
@@ -275,6 +269,8 @@ span {
 .active a:hover {
   color: #ec3323 !important;
 }
+
+
 
 @media (max-height: 500px) {
   .slider-wrapper,
