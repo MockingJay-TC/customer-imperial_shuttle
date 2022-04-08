@@ -1,10 +1,7 @@
 import { Fragment, useState } from "react";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import { XIcon } from "@heroicons/react/outline";
-import {
-  MinusSmIcon,
-  PlusSmIcon,
-} from "@heroicons/react/solid";
+import { MinusSmIcon, PlusSmIcon } from "@heroicons/react/solid";
 
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -186,9 +183,9 @@ export const Filter = () => {
         </Transition.Root>
 
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
+          <div className="grid grid-cols-1 gap-y-10">
             {/* Filters */}
-            <form className="hidden lg:block">
+            <form className="hidden lg:block ">
               {filters.map((section) => (
                 <Disclosure
                   as="div"
@@ -198,7 +195,7 @@ export const Filter = () => {
                   {({ open }) => (
                     <>
                       <h3 className="-my-3 flow-root">
-                        <Disclosure.Button className="py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500">
+                        <Disclosure.Button className="py-3 bg-none w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500">
                           <span className="font-medium text-gray-900">
                             {section.name}
                           </span>

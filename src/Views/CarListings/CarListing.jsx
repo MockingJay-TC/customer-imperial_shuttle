@@ -4,7 +4,7 @@ import { ImLocation } from "react-icons/im";
 import { MdDateRange } from "react-icons/md";
 import { BiFilter } from "react-icons/bi";
 import CarCard from "../../components/CarCard/CarCard";
-import {Filter} from  '../../components/Filter/Filter'
+import { Filter } from "../../components/Filter/Filter";
 
 const CarListing = () => {
   return (
@@ -97,7 +97,7 @@ const CarListing = () => {
       </div>
 
       {/* cars */}
-      <div className="bg-[#f2f2f2] flex justify-between py-10 px-20">
+      <div className="bg-[#f2f2f2] flex justify-start py-10 px-20">
         {/* left */}
         <div className="h-full border-2 border-gray-300 p-8 rounded-3xl w-1/4 ">
           <div className="flex items-center gap-2  font-bold text-xl">
@@ -105,12 +105,11 @@ const CarListing = () => {
             <BiFilter />
           </div>
           <hr className="my-4" />
-          <div>
-            <Filter/>
-          </div>
+          <Filter />
         </div>
         {/* right */}
-        <div className="grid grid-cols-3 justify-between gap-10 flex-wrap pl-20">
+        <div className="grid grid-cols-3 justify-between gap-10 flex-wrap pl-20 h-fit">
+          {/* <div className="flex flex-wrap gap-10 border border-[tomato] h-fit"> */}
           <CarCard />
           <CarCard />
           <CarCard />
