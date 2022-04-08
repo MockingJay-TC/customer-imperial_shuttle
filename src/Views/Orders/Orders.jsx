@@ -6,13 +6,15 @@ const Orders = () => {
   return (
     <div>
       <Banner title="Orders" />
-      <div className="border border-[tomato] bg-[/f2f2f2] ">
+      <div className="pb-20 bg-[#f2f2f2] h-fit">
         <div className="flex justify-between item-center px-20 py-8">
           <div className="">
-            <h2 className="text-4xl font-bold tracking-wide">Orders</h2>
+            <h2 className="text-4xl font-bold tracking-wide text-[#ec3323]">
+              Orders
+            </h2>
             <p className="text[#88939e]">Here is your Order list data</p>
           </div>
-          <div className="border border-[tomato]">
+          <div className="">
             <button
               id="dropdownDefault"
               dataDropdownToggle="dropdown"
@@ -63,7 +65,9 @@ const Orders = () => {
             </div>
           </div>
         </div>
-        <Table />
+        <div className="py-8 px-20">
+          <Table />
+        </div>
       </div>
     </div>
   );

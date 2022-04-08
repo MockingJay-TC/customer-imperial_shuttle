@@ -76,10 +76,10 @@ const Nav = ({ childComp }) => {
             >
               <div className="py-3 px-4">
                 <span className="block text-sm text-gray-900 dark:text-white">
-                  Victor Aremu
+                  Kwesi Frimpong
                 </span>
                 <span className="block text-sm font-medium text-gray-500 truncate dark:text-gray-400">
-                  victoraremu123@gmail.com
+                  kwesifrimpong234@gmail.com
                 </span>
               </div>
               <ul className="py-1" aria-labelledby="dropdown">

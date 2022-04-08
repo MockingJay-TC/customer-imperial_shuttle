@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
-import content from "./carouselData";
+import content from "./content";
 import { Link } from "react-router-dom";
 
 const Carousel = () => {
@@ -25,12 +25,12 @@ const Carousel = () => {
               </Link>
             </div>
           </div>
-          {/* <section>
+          <section>
             <img src={item.userProfile} alt={item.user} />
             <span>
-              Posted by <strong>{item.user}</strong>
+              <strong>{item.user}</strong>
             </span>
-          </section> */}
+          </section>
         </div>
       ))}
     </Slider>
