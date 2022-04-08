@@ -47,7 +47,9 @@ const Nav = ({ childComp }) => {
         <div className="container flex flex-wrap justify-between items-center mx-auto h-12 ">
           <Link to="/" className="flex items-center">
             <span
-              className={`text-${navbar ? 'black' : color} self-center text-xl md:text-2xl font-semibold whitespace-nowrap`}
+              className={`text-${
+                navbar ? "black" : color
+              } self-center text-xl md:text-2xl font-semibold whitespace-nowrap`}
             >
               Imperial Shuttle
             </span>
@@ -82,29 +84,29 @@ const Nav = ({ childComp }) => {
               </div>
               <ul className="py-1" aria-labelledby="dropdown">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/orders"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Orders
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/settings"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Settings
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
                   >
                     Sign out
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

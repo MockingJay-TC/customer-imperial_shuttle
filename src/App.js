@@ -6,6 +6,7 @@ import CarBooking from "./Views/CarBooking/CarBooking";
 import CarListing from "./Views/CarListings/CarListing";
 import Contact from "./Views/Contact/Contact";
 import Home from "./Views/Home/Home";
+import Orders from "./Views/Orders/Orders";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             path="/car-booking"
             element={<Nav childComp={<CarBooking />} />}
           />
+          <Route path="/orders" element={<Nav childComp={<Orders />} />} />
         </Routes>
       </Router>
     </div>
