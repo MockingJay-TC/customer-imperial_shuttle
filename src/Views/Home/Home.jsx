@@ -4,6 +4,7 @@ import Offer from "../../components/Offer/Offer";
 import Search from "../../components/Search/Search";
 import CarCard from "../../components/CarCard/CarCard";
 import CarType from "../../components/CarType/CarType";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -43,7 +44,7 @@ const Home = () => {
           <p className="text-[#c8c8c8]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <div className=" my-6 grid grid-cols-3 justify-between gap-10 flex-wrap pl-20 h-fit max-w-7xl mx-auto">
+          <div className=" my-6 grid grid-cols-3 gap-10 flex-wrap h-fit max-w-7xl mx-auto">
             {/* <div className="flex flex-wrap gap-10 border border-[tomato] h-fit"> */}
             <CarCard />
             <CarCard />
@@ -55,10 +56,10 @@ const Home = () => {
         </div>
         {/* Car by types */}
         <div className="bg-white text-center py-16">
-          <h2 className="text-2xl font-bold">Car by Types</h2>
+          <h2 className="text-3xl font-bold">Car by Types</h2>
           <p className="text-[#c8c8c8]">Lorem ipsum dolor sit amet.</p>
           {/* container */}
-          <div className="flex items-center justify-between max-w-5xl mx-auto my-4 gap-8">
+          <div className="max-w-7xl grid grid-cols-6 mx-auto py-12 gap-8">
             {/* car type */}
             <CarType car="Sedan" />
             <CarType car="Coupe" />
@@ -68,6 +69,7 @@ const Home = () => {
             <CarType car="Roadster" />
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );

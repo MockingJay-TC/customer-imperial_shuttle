@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const CarType = ({ car }) => {
   return (
-    <Link to="/car-listing" className="group border px-8 py-2 hover:bg-[#88939e] hover:shadow-xl hover:border-none hover:scale-110 transition ease-in-out duration-500 delay-100">
-      <div className="group-hover:text-white">
+    <Link to="/car-listing" className="w-full group border px-8 py-2 hover:bg-[#88939e] hover:shadow-xl hover:border-none hover:scale-110 transition ease-in-out duration-500 delay-100">
+      <div className="group-hover:text-white flex flex-col items-center">
         <img
           src="assets/images/sedan.svg"
           alt="CarType"
