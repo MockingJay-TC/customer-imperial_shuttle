@@ -16,7 +16,7 @@ const CarCard = () => {
           <h2 className="font-bold">Porsche 718 Cayman S</h2>
           <BsHeartFill className="text-[#ec3323]" />
         </div>
-        <p className="text-[#88939e]">Coupe</p>
+        <p className="text-[#88939e] text-left">Coupe</p>
         {/* image */}
         <img src="assets/images/1.png" className="my-4 px-6" alt="Car" />
         {/* settings */}

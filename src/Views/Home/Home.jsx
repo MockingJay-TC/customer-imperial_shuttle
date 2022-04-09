@@ -3,7 +3,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import Offer from "../../components/Offer/Offer";
 import Search from "../../components/Search/Search";
 import CarCard from "../../components/CarCard/CarCard";
-import { Link } from "react-router-dom";
+import CarType from "../../components/CarType/CarType";
 
 const Home = () => {
   return (
@@ -58,13 +58,14 @@ const Home = () => {
           <h2 className="text-2xl font-bold">Car by Types</h2>
           <p className="text-[#c8c8c8]">Lorem ipsum dolor sit amet.</p>
           {/* container */}
-          <div>
+          <div className="flex items-center justify-between max-w-5xl mx-auto my-4 gap-8">
             {/* car type */}
-            <Link to="/">
-              <i className="">
-
-              </i>
-            </Link>
+            <CarType car="Sedan" />
+            <CarType car="Coupe" />
+            <CarType car="Minivan" />
+            <CarType car="Limousine" />
+            <CarType car=" Wagon" />
+            <CarType car="Roadster" />
           </div>
         </div>
       </div>
