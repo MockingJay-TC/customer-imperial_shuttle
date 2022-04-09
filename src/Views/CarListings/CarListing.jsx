@@ -35,7 +35,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 w-full"
+                className="border-x-0 border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323] w-full"
               />
             </div>
             {/* right */}
@@ -46,7 +46,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 w-full"
+                className="border-x-0 border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323] w-full"
               />
             </div>
           </div>
@@ -59,7 +59,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 "
+                className="border-x-0 w-full border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323]"
               />
             </div>
             <div>
@@ -69,7 +69,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 "
+                className="border-x-0 w-full border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323]"
               />
             </div>
             <div>
@@ -79,7 +79,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 "
+                className="border-x-0 w-full border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323]"
               />
             </div>
             <div>
@@ -89,7 +89,7 @@ const CarListing = () => {
               </div>
               <input
                 type="text"
-                className="border-x-0 border-t-0 outline-none border-b-2 border-[#ec3323] focus:ring-0 "
+                className="border-x-0 w-full border-t-0 outline-none border-b-2 border-[#f3f3f3] focus:ring-0 focus:border-[#ec3323]"
               />
             </div>
           </div>
@@ -99,7 +99,7 @@ const CarListing = () => {
       {/* cars */}
       <div className="bg-[#f2f2f2] flex justify-start py-10 px-20">
         {/* left */}
-        <div className="h-full border-2 border-gray-300 p-8 rounded-3xl w-1/4 ">
+        <div className="h-full border-2 border-gray-300 p-8 rounded-3xl w-1/3 3xl:w-1/4 ">
           <div className="flex items-center gap-2  font-bold text-xl">
             <h3>Filter By</h3>
             <BiFilter />
