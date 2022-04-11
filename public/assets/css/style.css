@@ -275,7 +275,22 @@ span {
   height: 700px;
 }
 
+/* Service Slider */
+.item {
+  min-height: 40rem;
+  border: 2px solid tomato;
+  width: 30rem;
+  padding: 40px;
+  border-radius: 2rem;
+}
 
+.inner-carousel {
+  display: flex;
+}
+.carousel {
+  cursor: grab;
+  overflow: hidden;
+}
 
 @media (max-height: 500px) {
   .slider-wrapper,

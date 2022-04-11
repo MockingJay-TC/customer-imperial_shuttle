@@ -14,9 +14,9 @@ const Home = () => {
         alt="Slide"
         className="absolute w-screen h-full top-[120%] -z-10 brightness-50 mix-blend-overlay bg-[#333]"
       /> */}
-      <div className=" h-fit">
+      <div className="h-fit">
         <Carousel />
-        <div className="clip bg-[#f4f8f9] text-center pt-20">
+        <div className=" relative clip bg-[#f4f8f9] text-center pt-20">
           <Search />
         </div>
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import Ceo from "../../components/CEO/Ceo";
+import ServiceSlider from "../../components/ServiceSlider/ServiceSlider";
 import Values from "../../components/Values/Values";
 
 const About = () => {
@@ -31,6 +32,12 @@ const About = () => {
           <div className="w-full">
             <img src="assets/images/1.png" alt="" className="px-10 py-10" />
           </div>
+        </div>
+        {/* See our Latest Services */}
+        <div className="bg-[#f4f8f9] border border-[tomato] py-10">
+          <h4 className="text-[#ee3] text-xl">See Our</h4>
+          <h2 className="text-[#001238] text-2xl my-4">Latest Services</h2>
+          <ServiceSlider/>
         </div>
       </div>
     </div>
