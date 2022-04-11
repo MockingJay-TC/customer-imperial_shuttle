@@ -11,7 +11,7 @@ const About = () => {
         {/* About Title */}
         <Banner title="About Us" />
         {/* About Header */}
-        <div className=" text-center flex flex-col md:flex-row items-center max-w-7xl mx-2 md:mx-auto">
+        <div className=" text-center flex flex-col md:flex-row items-center max-w-7xl mx-2 md:mx-auto md:my-8">
           {/* welcome */}
           {/* Left Side */}
           <div className="w-full">
@@ -34,10 +34,16 @@ const About = () => {
           </div>
         </div>
         {/* See our Latest Services */}
-        <div className="bg-[#f4f8f9] border border-[tomato] py-10">
-          <h4 className="text-[#ee3] text-xl">See Our</h4>
-          <h2 className="text-[#001238] text-2xl my-4">Latest Services</h2>
-          <ServiceSlider/>
+        <div className="bg-[#f4f8f9] py-10">
+          <div>
+            <h4 className="text-[#ec3323] text-xl text-center">See Our</h4>
+            <h2 className="text-4xl leading-8 font-semibold mb-12 text-slate-700 text-center my-2">
+              Latest Services
+            </h2>
+            <div className="max-w-7xl mx-auto my-12">
+              <ServiceSlider />
+            </div>
+          </div>
         </div>
       </div>
     </div>
